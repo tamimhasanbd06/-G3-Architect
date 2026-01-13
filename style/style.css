@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-
-
 .work-sans {
   font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
@@ -9,32 +7,28 @@
   font-style: normal;
 }
 
-
-
-
-
-/* Shared style */
-.display-flex{
+/* Shared styles */
+.display-flex {
   display: flex;
 }
 
-
-/* dar02 */
-.text-gray{
-   color: #424242;
+.text-primary {
+  color: #ff900e;
 }
 
-/* dar03 */
-.text-light-gray{
- color:  #727272;
+.text-gray {
+  color: #424242;
+}
+
+.text-light-gray {
+  color: #727272;
 }
 
 .bg-light {
-background-color: rgba(255, 144, 14, 0.1);
+  background-color: rgba(255, 144, 14, 0.1);
 }
 
-
-.btn-Primary{
+.btn-Primary {
   background-color: #ff900f;
   color: white;
   padding: 20px 25px;
@@ -42,64 +36,174 @@ background-color: rgba(255, 144, 14, 0.1);
   font-weight: 600;
   border-radius: 8px;
   border: none;
-}
-/* Header style */
-
-/* Never style */
-
-.navbar{
-justify-content: space-between;
-align-items: center;
+  cursor: pointer;
 }
 
-.brand{
-  font: weight 700px; 
-  font: size 3rem; ;
+.Section-title {
+  font-size: 2.8rem;
+  font-weight: 700;
 }
 
-.nav-item{
+
+
+/* Main */
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+
+main > section {
+  margin-top: 130px;
+}
+
+/* Header / Navbar */
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.brand {
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.nav-item {
   list-style: none;
   margin-right: 30px;
 }
 
-
-.nav-link{
+.nav-link {
   text-decoration: none;
   font-size: 18px;
   font-weight: 500;
 }
 
-.navbar, .banner {
-max-width: 1440px;
-margin: 0 auto;
-}
-
-
-/* Banner related style */
-.Banner-Content{
-  max-width: 850px; 
+/* Banner */
+.banner {
+  max-width: 1440px;
   margin: 0 auto;
+}
+
+.Banner-Content {
+  max-width: 850px;
+  margin: 0 auto 50px;
   text-align: center;
-  margin-bottom:50px;
 }
 
-.banner-title{
+.banner-title {
   font-weight: 700;
-font-size: 4rem;
+  font-size: 4rem;
+}
+
+.banner-image {
+  width: 100%;
+}
+
+/* Teams section */
+.teams {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  padding: 80px 0;
+}
+
+.teams-img-contaier {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
 }
 
 
-.banner-image{
-width: 100%;
+.our-features {
+  margin-left: 130px;
+  max-width: 530px;
 }
 
-/* Responsive media quary */
 
+
+#quick-list {
+  font-weight: 500;
+}
+
+/* Some fact related style */
+
+
+.fact-card {
+  border: 1px solid #ff900e;
+  width: 240px;
+  height: 240px;
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.facts-container{
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+}
+
+.fact-number{
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+
+
+.fact-name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+
+#Fact-description{
+max-width: 540px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive */
 @media screen and (max-width: 576px) {
-  .navbar .nav-links {
+
+  .navbar,
+  .teams,
+  .nav-links {
     flex-direction: column;
   }
 
+
+.teams-img-contaier{
+  grid-template-columns: repeat(1, 1fr);
+}
+
+
+.our-features{
+  margin-left: 20px;
+}
+
 }
 
 
@@ -112,35 +216,15 @@ width: 100%;
 
 
 
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .teams{
+    flex-direction: column;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  .our-features{
+  margin-left: 50px auto;
+}
+}
 
 
 
